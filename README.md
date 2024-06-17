@@ -3,7 +3,7 @@
 
 
 ## Abstract
-![输入图片说明](/imgs/2024-06-17/b8U9so7PKA9U8PB5.png)
+![输入图片说明](https://github.com/csmaxuebin/PDP-FD/blob/main/tp/%7BE63E596D-6F9E-47e1-9EC9-F1929C38451C%7D.png)
 Federated Learning (FL) is a distributed machine learning framework where each participant achieves model training by exchanging model parameters. However, when the server is dishonest, it may lead to the leakage of the private data of participants. Furthermore, FL is also affected by non-independent and identically distributed (Non-IID) data, resulting in a decrease in model accuracy. At the same time, Non-IID data may also lead to different privacy protection requirements among participants, making it difficult to handle them uniformly. In this paper, we propose a Federated Knowledge Distillation Based on Personalized Differential Privacy (PDP-FD) that considers both data heterogeneity and privacy protection problems. To solve the data heterogeneity problem, we adopt a network structure with a personalization layer and propose a strategy of dynamically adjusting the personalization layer. By adjusting the personalization layer, we can adequately preserve local features while better adapting to the data characteristics among different participants. To solve the problem of different privacy requirements among participants, we propose a personalized privacy budget allocation strategy, which adds appropriate noise based on the training state of the local model to achieve personalized privacy protection. Finally, the experimental results show the effectiveness of our mechanism and its superior performance over other differential privacy FL schemes.
 
 
@@ -83,8 +83,8 @@ This file contains code that likely handles updates to datasets or models within
 
 ##  Experimental Results
 The experimental results demonstrate that the PDP-FD method significantly outperforms other methods in terms of model accuracy, convergence speed, and privacy cost across the tested datasets (CIFAR-10 and MNIST). This success is attributed to the dynamic adjustment of the personalization layer, which better adapts to local data heterogeneities, and a personalized privacy budget allocation strategy that effectively balances privacy protection with model utility. These improvements allow the PDP-FD method to achieve higher model performance with lower privacy costs compared to existing methods, thereby confirming the efficacy of the proposed approach in managing the challenges posed by non-IID data and varying privacy requirements in federated learning environments.
-![输入图片说明](/imgs/2024-06-17/SzKBuDwPnpid4IjX.png)
-![输入图片说明](/imgs/2024-06-17/ULK73PMoes7ScJIQ.png)![输入图片说明](/imgs/2024-06-17/RsjvJc9Qsr3az9vQ.png)
+![输入图片说明](https://github.com/csmaxuebin/PDP-FD/blob/main/tp/%7B913D77F0-02A0-404c-8388-AE5BCF96C37B%7D.png)
+![输入图片说明](https://github.com/csmaxuebin/PDP-FD/blob/main/tp/%7BB8CE7812-A15A-4213-96BE-E1A81B98E729%7D.png)![输入图片说明](https://github.com/csmaxuebin/PDP-FD/blob/main/tp/%7BF21598DE-A3F5-49ab-BE51-7E91F11D3342%7D.png)
 
 
 ```
